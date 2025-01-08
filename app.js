@@ -56,7 +56,7 @@ const printer = (event) => {
             turn = "O"
             if (checkWinner()) {
                 document.getElementById('winning').innerText = "Winner is X";
-                // board.removeEventListener('click', printer);
+                return;
 
             }
         }
