@@ -44,6 +44,8 @@ const printer = (event) => {
             turn = "X"
             if (checkWinner()) {
                 document.getElementById('winning').innerText = "Winner is O";
+                  player_o.innerText = " ";
+                  player_x.innerText = " ";
                 return;
             }
         }
@@ -56,6 +58,8 @@ const printer = (event) => {
             turn = "O"
             if (checkWinner()) {
                 document.getElementById('winning').innerText = "Winner is X";
+                   player_o.innerText = " ";
+                  player_x.innerText = " ";
                 return;
 
             }
